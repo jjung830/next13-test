@@ -35,7 +35,7 @@ export default function Home() {
 
       <div className={styles.madwell}>
         <Madwell />
-        <h2><Link href="/work">Madwell Works</Link></h2>
+        <h2><Link href="/work">Madwell Works :smile</Link></h2>
       </div>
 
       <div className={styles.center}>
