@@ -1,0 +1,119 @@
+// Fonts
+
+@font-face{
+  font-family: 'NB International';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/fonts/nbinternationalproreg-webfont.eot");
+  src: url("../public/fonts/nbinternationalproreg-webfont.eot?#iefix") format("eot"),url("../public/fonts/nbinternationalproreg-webfont.woff2") format("woff2"),url("../public/fonts/nbinternationalproreg-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: 'NB International Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/fonts/nbinternationalpromono-webfont.eot");
+  src: url("../public/fonts/nbinternationalpromono-webfont.eot?#iefix") format("eot"),url("../public/fonts/nbinternationalpromono-webfont.woff2") format("woff2"),url("../public/fonts/nbinternationalpromono-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: 'NB International';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../public/fonts/nbinternationalpromed-webfont.eot");
+  src: url("../public/fonts/nbinternationalpromed-webfont.eot?#iefix") format("eot"),url("../public/fonts/nbinternationalpromed-webfont.woff2") format("woff2"),url("../public/fonts/nbinternationalpromed-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: 'NB International';
+  font-weight: 700;
+  font-style: bold;
+  src: url("../public/fonts/nbinternationalprobol-webfont.eot");
+  src: url("../public/fonts/nbinternationalprobol-webfont.eot?#iefix") format("eot"),url("../public/fonts/nbinternationalprobol-webfont.woff2") format("woff2"),url("../public/fonts/nbinternationalprobol-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: 'NB International';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../public/fonts/nbinternationalprolig-webfont.eot");
+  src: url("../public/fonts/nbinternationalprolig-webfont.eot?#iefix") format("eot"),url("../public/fonts/nbinternationalprolig-webfont.woff2") format("woff2"),url("../public/fonts/nbinternationalprolig-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: 'Neue';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/fonts/02edab23-a38c-4a75-be9b-15fd6ac8d76d.woff") format("woff"),url("../public/fonts/2ef31473-de26-4442-863c-a10c77773127.woff2") format("woff2");
+}
+
+@font-face{
+  font-family: 'Neue';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../public/fonts/1311b565-1e8f-49d4-b7e7-c560a48a3e0d.woff") format("woff"),url("../public/fonts/39a175f6-df39-4407-a2e1-82847342367b.woff2") format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "NB International", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+  --black: #020f07;
+  --red: rgb(237, 28, 13);
+  --orange: rgb(237, 115, 0);
+  --purple: rgb(102, 51, 130);
+  --blue: rgb(61, 140, 222);
+  --cyan: rgb(0, 201, 191);
+  --lily: rgb(255, 163, 181);
+  --pink: rgb(255, 51, 99);
+  --gold: rgb(255, 191, 15);
+  --green: rgb(135, 199, 15);
+
+  // --black: #111;
+  --slate: #222;
+  --gray: #333;
+  --lightGray: #404040;
+  --silver: #888;
+  --egg: #f8f8f8;
+
+  --lightblue: #bed7f4;
+  --lightgray: #eaeaea;
+  --glacier: #0883FA;
+  --warm-grey: #EBE7E2;
+
+  --side-padding: 64px;
+
+  --neue: "Neue", "Helvetica Neue", "Helvetica", sans-serif;
+  --bodyFont:  "NB International", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+@media #{$tablet-query} {
+  :root {
+    --side-padding: 32px;
+  }
+}
+
+body {
+  background: var(--black);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@import "variables";
+@import "capes"; // global block styles

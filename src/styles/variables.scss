@@ -1,0 +1,45 @@
+// Breakpoints
+
+$lgdesktop-breakpoint: 1440px;
+$smdesktop-breakpoint: 1200px;
+$tablet-breakpoint: 1023px;
+$smtablet-breakpoint: 750px;
+$mobile-breakpoint: 600px;
+
+// Media Queries
+
+$lgdesktop-query: "only screen and (max-width: " + $lgdesktop-breakpoint + ")";
+$smdesktop-query: "only screen and (max-width: " + $smdesktop-breakpoint + ")";
+$tablet-query: "only screen and (max-width: " + $tablet-breakpoint + ")";
+$smtablet-query: "only screen and (max-width: " + $smtablet-breakpoint + ")";
+$mobile-query: "only screen and (max-width: " + $mobile-breakpoint + ")";
+
+// Colors
+$red: var(--red);
+$orange: var(--orange);
+$purple: var(--purple);
+$blue: var(--blue);
+$cyan: var(--cyan);
+$lily: var(--lily);
+$pink: var(--pink);
+$gold: var(--gold);
+$green: var(--green);
+
+$white: var(--white);
+$black: var(--black);
+$slate: var(--slate);
+$gray: var(--gray);
+$lightGray: var(--lightGray);
+$silver: var(--silver);
+$egg: var(--egg);
+
+$lightblue: var(--lightblue);
+$lightgray: var(--lightgray);
+
+$sans: "NB International", "Helvetica Neue", "Helvetica", sans-serif;
+$neue: "Neue", "Helvetica Neue", "Helvetica", sans-serif;
+$capes-sans: "NB International";
+
+// Wrapper sizes
+$wrapper-width: 1576px; // Default wrapper sizing (flex and grid)
+$capes-width: 1440px;

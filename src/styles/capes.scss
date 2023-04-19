@@ -1,0 +1,71 @@
+.capes-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-flow: column nowrap;
+  font-family: $capes-sans;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  position: relative;
+
+  p {
+      font-size: 16px;
+      margin: 30px 0;
+      color: #fff;
+  }
+}
+
+.capes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background: $black;
+  text-align: left;
+  position: relative;
+
+  &:before, &:after { // current CSS has a clearfix affixed to every <section>; removing it here
+      display: none;
+  }
+
+  @media #{$tablet-query} {
+      min-height: auto;
+  }
+
+  // this is for the mobile breadcrumbs
+  @media #{$smtablet-query} {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+  }
+
+  &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: $capes-width;
+      padding: 50px 60px;
+      box-sizing: border-box;
+
+      @media #{$tablet-query} {
+          padding: 40px 60px 40px 60px;
+      }
+
+      @media #{$mobile-query} {
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+  }
+
+  &__overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(90deg, rgba(119, 119, 119, 0.5), rgba(196, 196, 196, 0));
+      mix-blend-mode: multiply;
+      height: 100%;
+      width: 66%;
+      z-index: 1;
+      pointer-events: none;
+  }
+}
